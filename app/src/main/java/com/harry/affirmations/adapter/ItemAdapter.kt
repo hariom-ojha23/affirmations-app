@@ -14,18 +14,18 @@ import com.harry.affirmations.model.Affirmation
  * Adapter for the RecyclerView in MainActivity. Displays Affirmation data object.
  */
 class ItemAdapter(
-    private val context: Context,
-    private val dataset : List<Affirmation>
-    ) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
+        private val context: Context,
+        private val dataset: List<Affirmation>
+) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
     // we provide access to all the views for a data item in a view holder.
     // Each data item is just an Affirmation object.
 
-    class ItemViewHolder(view: View): RecyclerView.ViewHolder(view) {
-        val textView : TextView = view.findViewById(R.id.item_title)
-        val imageView : ImageView = view.findViewById(R.id.item_image)
+    class ItemViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val textView: TextView = view.findViewById(R.id.item_title)
+        val imageView: ImageView = view.findViewById(R.id.item_image)
     }
 
 
@@ -36,7 +36,7 @@ class ItemAdapter(
 
         //create a new View
         val adapterLayout = LayoutInflater.from(parent.context)
-            .inflate(R.layout.list_item, parent, false)
+                .inflate(R.layout.list_item, parent, false)
 
         return ItemViewHolder(adapterLayout)
     }

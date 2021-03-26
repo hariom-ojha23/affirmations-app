@@ -1,4 +1,5 @@
 package com.harry.affirmations.data
+
 import com.harry.affirmations.R
 import com.harry.affirmations.model.Affirmation
 
